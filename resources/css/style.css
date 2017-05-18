@@ -1,274 +1,258 @@
-
 /*Common classes*/
-html{
-  font-size: 16px;
-  border:0;
-  margin:0;
-}
 
-.container{
-  padding-top: 0;
-  padding-right: 1.5rem;
-  padding-bottom: 0;
-  padding-right: 1.5rem;
+html {
+    font-size: 16px;
+    border: 0;
+    margin: 0;
 }
-
+.container {
+    padding-top: 0;
+    padding-right: 1.5rem;
+    padding-bottom: 0;
+    padding-right: 1.5rem;
+}
 /*Mobile container*/
-.container{
-  padding:0;
-}
 
+.container {
+    padding: 0;
+}
 /*Header sytles*/
-
 /*Desktop*/
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4rem;
-  background-color: #7ba8a2;
-  position: fixed;
-  z-index: 20;
-  width: 100%;
-  color:#f3f3eb;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: #7ba8a2;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    color: #f3f3eb;
 }
-
-
-.logosection{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height:100%;
+.logosection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
-
-.logosection img{
-  height: 100%;
+.logosection img {
+    height: 100%;
 }
-
-.logoboldname{
-  font-weight: bold;
+.logoboldname {
+    font-weight: bold;
 }
-
-#mobile{
-  display: none;
+#mobile {
+    display: none;
 }
-
-.headernavigation ul{
-  display: flex;
+.headernavigation ul {
+    display: flex;
 }
-
-.headernavigation ul li{
-  padding-right: 1rem;
+.headernavigation ul li {
+    padding-right: 1rem;
 }
-
 /*Mobile header*/
-@media only screen and (max-width:595px){
-#desktop{
-  display: none;
-}
-#mobile{
-  display:flex;
-}
-.logotext{
-  display: none;
-}
 
-.logosection{
-  width: 25%;
-  height: auto;
-  justify-content: center;
+@media only screen and (max-width: 595px) {
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: flex;
+    }
+    .logotext {
+        display: none;
+    }
+    .logosection {
+        width: 25%;
+        height: auto;
+        justify-content: center;
+    }
+    .headernavigation {
+        width: 75%;
+    }
+    .headernavigation ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .headernavigation ul li {
+        width: 25%;
+        text-align: center;
+        padding: 0;
+    }
 }
-.headernavigation {
-  width: 75%;
-}
-
-.headernavigation ul{
-  width: 100%;
-  justify-content: space-around;
-}
-.headernavigation ul li{
-  width: 25%;
-  text-align: center;
-  padding: 0;
-}
-
-}
-
 /*Banner section*/
 /*Desktop rendition*/
-.banner{
-  display: flex;
-  background-color:rgba(0,0,0,.05);
-  position: relative;
-  flex-flow: wrap;
-  top: 4rem;
 
-}
-
-.bannerimg{
-  width: 60%;
-  height: auto;
-  padding: 2rem 2.5rem 2rem 1.5rem;
-
-}
-
-.bannerimg img{
-  max-width: 100%;
-  height: auto;
-}
-
-.bannertext{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 30%;
-  padding: 2rem 1.5rem 2rem 0;
-
-}
-
-
-.bannertextitem{
-  margin-bottom: 2rem;
-
-}
-
-.bannertextitem h1{
-  font-weight: bold;
-  font-size: 3rem;
-}
-
-.bannertextitem h3{
-  font-size: 2rem;
-}
-
-.bannertextitem h5{
-  font-size: 1.5rem;
-  padding: 0.5em 0;
-}
-
-#bannerbutton{
-  width: 80%;
-  height: auto;
-  background-color: #808080;
-  color: white;
-  text-align: center;
-  vertical-align: middle;
-}
-
-/*mobile version*/
-@media only screen and (max-width:490px){
-  .banner{
+.banner {
     display: flex;
-    flex-direction: column;
-    background-color:#dcdcdc;
-  }
-
-  .bannerimg{
-    padding: 0;
-    width: 100%;
-    height: 11.25rem;
-  }
-|
-  .bannerimg img{
-    height: inherit;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-  }
-
-  .bannertext{
-   width: 100%;
-   align-items: flex-start;
-   text-align: left;
-
-  }
-
-}
-/*Tab version*/
-@media only screen and (max-width:970px){
-  .banner{
-    display: flex;
-    flex-direction: column;
+    background-color: rgba(0, 0, 0, .05);
+    position: relative;
     flex-flow: wrap;
-    background-color:#dcdcdc;
-  }
-
-
-  .bannerimg{
-    width: 100%;
-    padding: 0;
-    object-fit:cover;
-    object-position: 0% 0%;
-
-  }
-
-  .bannertext{
-   width: 100%;
-   padding: 2rem 1rem;
-   align-items: center;
-   text-align: center;
-  }
-
-  .bannertextitem{
-    margin-bottom: 0;
-
-  }
-
-  .bannertextitem h3{
-    margin : 2rem 0 1.5rem 0;
-  }
+    top: 4rem;
+    margin-bottom: 4rem;
 }
-
-  /*blogs section*/
-  .blogs{
-    display: flex;
-    /*margin-top: 2rem;*/
-    /*margin: 2rem 1.5rem;
-    padding:  2rem 1.5rem;*/
-  }
-
-  .mainblog{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mainblogimg, .mainblogdesc{
-    padding-bottom:  2rem;
-  }
-
-   .mainblogimg img{
-     max-width: 100%;
-     height:180px;
-
-   }
-
-  .mainblogtitle{
-    padding-bottom: 1.5rem;
-  }
-
-  .mainblogtitle h1{
-    font-size: 3rem;
-    font-weight: bold;
-  }
-
-  .mainblogdesc h3{
-    font-size: 1.5rem;
-    font-weight: normal;
-    opacity: 0.6;
-  }
-
-  .mainblogauth p{
-    font-size: 0.5rem;
-  }
-
-  .mainblogtxt{
+.bannerimg {
+    width: 60%;
+    height: auto;
+    padding: 2rem 2.5rem 2rem 1.5rem;
+}
+.bannerimg img {
+    max-width: 100%;
+    height: auto;
+}
+.bannertext {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 30%;
+    padding: 2rem 1.5rem 2rem 0;
+}
+.bannertextitem {
+    margin-bottom: 2rem;
+}
+.bannertextitem h1 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+.bannertextitem h3 {
+    font-size: 2rem;
+}
+.bannertextitem h5 {
+    font-size: 1.5rem;
+    padding: 0.5em 0;
+}
+#bannerbutton {
+    width: 80%;
+    height: auto;
+    background-color: #808080;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+/*mobile version*/
 
+@media only screen and (max-width: 490px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        background-color: #dcdcdc;
+    }
+    .bannerimg {
+        padding: 0;
+        width: 100%;
+        height: 11.25rem;
+    }
+    | .bannerimg img {
+        height: inherit;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .bannertext {
+        width: 100%;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+/*Tab version*/
 
-  }
+@media only screen and (max-width: 970px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        background-color: #dcdcdc;
+    }
+    .bannerimg {
+        width: 100%;
+        padding: 0;
+        object-fit: cover;
+        object-position: 0% 0%;
+    }
+    .bannertext {
+        width: 100%;
+        padding: 2rem 1rem;
+        align-items: center;
+        text-align: center;
+    }
+    .bannertextitem {
+        margin-bottom: 0;
+    }
+    .bannertextitem h3 {
+        margin: 2rem 0 1.5rem 0;
+    }
+}
+/*blogs section*/
 
-  .upcomingblogs{
-    width:440px;
-  }
+.blogs {
+    display: flex;
+    padding-top: 2rem;
+}
+.mainblog {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.mainblogimg,
+.mainblogdesc {
+    padding-bottom: 2rem;
+}
+.mainblogimg img {
+    max-width: 100%;
+    height: auto;
+}
+.mainblogtitle {
+    padding-bottom: 1.5rem;
+}
+.mainblogtitle h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.mainblogdesc h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    opacity: 0.6;
+}
+.mainblogauth p {
+    font-size: 1rem;
+}
+.mainblogtxt,
+.newblogtxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.upcomingblogs {
+    width: 25.43rem;
+    /*width: 32rem;*/
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+}
+.newblogimg {
+    width: 35%;
+    height: auto;
+    padding: 1rem 1rem 1rem 0;
+}
+.newblogimg img {
+    width: 100%;
+    height: auto;
+}
+.newblogtitle h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.newblogdesc h5,
+.newblogreadmore h5 {
+    font-size: 1rem;
+}
+.newblog {
+    display: flex;
+}
+.upcomingblogs :first-child .newblogimg {
+  padding-top: 0;
+}
