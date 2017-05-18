@@ -189,6 +189,7 @@ header {
 .blogs {
     display: flex;
     padding-top: 2rem;
+    padding-bottom: 2rem;
     align-items: stretch;
 }
 .mainblog {
@@ -341,17 +342,117 @@ header {
   .upcomingblogs{
    width: 100%;
    flex-direction: column;
+
   }
 
   .newblog{
     width: 100%;
+    padding-top: 1rem
   }
   .newblogtxt{
    background-color: white;
-   /*border: 0;*/
+   border: 0;
    width: 100%;
    color:black;
 
+  }
+  .blogs {
+    padding-top: 2rem;
+
+  }
+
+  .newblogtitle , .newblogdesc , .newblogreadmore{
+    padding-left: 1rem;
+  }
+
+  .newblogmobileimg{
+    padding-bottom: 1rem;
+  }
+}
+
+/*Courses section*/
+/*Desktop styles*/
+
+.coursesec{
+   background-color: rgba(0, 0, 0, .05);
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+.sectiontitle{
+  width: 100%;
+  text-align: center;
+}
+
+.courses{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+
+  width:85%;
+  margin: 2rem auto 2rem auto;
+}
+
+.sectiontitle{
+  font-size: 2.5rem;
+  opacity: 0.7;
+  padding-bottom: 2rem;
+}
+
+.course{
+  background-color: #7ba8a2;
+  color: #f3f3eb;
+  width: 28%;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.courseimg, .courseimg img{
+  width: 100%;
+  height: auto;
+
+}
+.courseimg{
+  flex-shrink: 3;
+}
+
+.coursetitle{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.coursedetails{
+  padding: 0.5rem 0;
+}
+
+.coursetext{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 1rem 1.5rem 1rem;
+  flex-shrink: 1;
+}
+
+/*Tab styling*/
+
+@media only screen and (max-width: 970px) {
+
+
+
+  .courses{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .course,.coursetitle{
+    width: 100%;
+    text-align: center;
+  }
+  .courseimg , .coursedetails , .courselist{
+    display: none;
   }
 
 }
