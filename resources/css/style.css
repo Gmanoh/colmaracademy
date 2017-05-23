@@ -45,7 +45,11 @@ header {
     height: 100%;
 }
 .logoboldname {
-    font-weight: bold;
+    font-weight: bolder;
+}
+.logothinname{
+  font-weight: lighter;
+  opacity: 0.6;
 }
 #mobile {
     display: none;
@@ -53,9 +57,23 @@ header {
 .headernavigation ul {
     display: flex;
 }
-.headernavigation ul li {
-    padding-right: 1rem;
+
+.headernavigation ul a{
+    color: #f3f3eb;
 }
+
+.headernavigation ul li {
+    padding:1rem 1rem 1rem 0;
+}
+
+.headernavigation ul li a:hover{
+  color: black;
+  color: #CE5A57;
+  background-color: #f3f3eb;
+  border-radius: 3px;
+}
+
+
 /*Mobile header*/
 
 @media only screen and (max-width: 595px) {
@@ -117,7 +135,9 @@ header {
 }
 .bannertextitem {
     margin-bottom: 2rem;
+    border-radius: 2rem;
 }
+
 .bannertextitem h1 {
     font-weight: bold;
     font-size: 3rem;
@@ -133,10 +153,22 @@ header {
     width: 80%;
     height: auto;
     background-color: #808080;
-    color: white;
+
     text-align: center;
     vertical-align: middle;
 }
+
+#bannerbutton a{
+  color: white;
+}
+.bannertextitem h5:hover{
+  color: #f3f3eb;
+  background-color: #CE5A57;
+  border-radius: 2rem;
+
+}
+
+
 /*mobile version*/
 
 @media only screen and (max-width: 490px) {
@@ -267,6 +299,10 @@ header {
 }
 .newblog {
     display: flex;
+}
+.newblog:hover, .newblog a:hover{
+  color: #CE5A57;
+  background-color: #f3f3eb;
 }
 .newblogtxt{
   width: 50%;
@@ -421,10 +457,18 @@ header {
   margin-right: 2rem;
   display: flex;
   flex-direction: column;
+  border-radius: 1rem;
+
 }
+
+.course:hover{
+transform: skew(-5deg);
+}
+
 .courseimg, .courseimg img{
   width: 100%;
   height: auto;
+  border-radius: 1rem;
 
 }
 .courseimg{
