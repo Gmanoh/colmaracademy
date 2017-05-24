@@ -272,7 +272,7 @@ header {
     /*width: 32rem;*/
     width:35%;
     /*width: auto;*/
-    padding-left: 1rem;
+    /*padding-left: 1rem;*/
     display: flex;
     flex-direction: column;
     /*justify-content: space-between;*/
@@ -299,6 +299,7 @@ header {
 }
 .newblog {
     display: flex;
+    padding-left: 1rem;
 }
 .newblog:hover, .newblog a:hover{
   color: #CE5A57;
